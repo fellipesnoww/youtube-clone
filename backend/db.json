@@ -1,0 +1,78 @@
+{
+    "feed": [
+        {
+            "video": {
+                "name": "2020 em musica",
+                "image_url": "123123",
+                "views": "1.1M",
+                "date": "06/03/2020",
+                "time": "3:44",
+                "tag":{
+                    "id": 1,
+                    "description": "Trending"
+                },
+                "channel":{
+                    "avatar": "287321739",
+                    "name": "Inutilismo"
+                }
+            }
+        }
+    ],
+    "tags": [
+        {
+            "id": 1,
+            "description": "Trending"
+        },
+        {
+            "id": 2,
+            "description": "Music"
+        },
+        {
+            "id": 3,
+            "description": "Gaming"
+        },
+        {
+            "id": 4,
+            "description": "News"
+        },
+        {
+            "id": 5,
+            "description": "Movies"
+        },
+        {
+            "id": 6,
+            "description": "Learning"
+        },
+        {
+            "id": 7,
+            "description": "Live"
+        },
+        {
+            "id": 8,
+            "description": "Sports"
+        }
+    ],
+    "subscription": [
+        {
+            "id": 1,
+            "channel":{
+                "avatar": "287321739",
+                "name": "Inutilismo"
+            }
+        },
+        {
+            "id": 2,
+            "channel":{
+                "avatar": "287321739",
+                "name": "Maicon Kuster"
+            }
+        },
+        {
+            "id": 3,
+            "channel":{
+                "avatar": "287321739",
+                "name": "Rocketseat"
+            }
+        }
+    ]
+}
