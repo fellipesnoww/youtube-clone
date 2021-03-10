@@ -1,5 +1,6 @@
 import React from 'react';
 import { View } from 'react-native';
+// import Icon from 'react-native-vector-icons/MaterialIcons';
 import Icon from 'react-native-vector-icons/Feather';
 import { List, VideoContent, AboutContent, DetailText, ContentText, AboutText, Thumbnail, AvatarImage, IconContent, DurationContent, TextDuration } from './styles';
 import { FeedReponse } from '../../types/FeedReponse';
