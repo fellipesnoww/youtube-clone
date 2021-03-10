@@ -3,7 +3,7 @@
         {
             "video": {
                 "id": 1,
-                "name": "2020 em musica",
+                "name": "2020 EM UMA MÚSICA",
                 "image_url": "https://i.ytimg.com/vi/fLpCyU_SHRo/maxresdefault.jpg",
                 "views": "1.1M",
                 "date": "2 months ago",
@@ -21,7 +21,7 @@
         {
             "video": {
                 "id": 2,
-                "name": "2019 em musica",
+                "name": "2019 EM UMA MÚSICA",
                 "image_url": "https://i.ytimg.com/vi/PhfXQ58ywuI/maxresdefault.jpg",
                 "views": "1.1M",
                 "date": "2 years ago",
@@ -31,7 +31,7 @@
                     "description": "Trending"
                 },
                 "channel":{
-                    "avatar": "287321739",
+                    "avatar": "https://yt3.ggpht.com/ytc/AAUvwniSCbwb7fNmt-Olfwjv1yLViSFBOL2Lh71wAwDFhA=s900-c-k-c0x00ffffff-no-rj",
                     "name": "Inutilismo"
                 }
             }
@@ -76,7 +76,7 @@
             "video": {
                 "id": 5,
                 "name": "Homepage da Tesla com ReactJS | UI Clone #14",
-                "image_url": "https://i.ytimg.com/vi/f7jMO95AHmA/maxresdefault.jpg",
+                "image_url": "https://i.ytimg.com/vi/Mf4Se4ZGcG8/mqdefault.jpg",
                 "views": "27K",
                 "date": "6 months ago",
                 "time": "01:31:54",
