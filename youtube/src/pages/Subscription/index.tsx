@@ -1,7 +1,7 @@
 import React, {useEffect, useState} from 'react';
 import {Image} from 'react-native';
 import Header from '../../components/Header';
-
+import {useNavigation} from '@react-navigation/native'
 import api from '../../services/api';
 import { FeedReponse, Channel } from '../../types/FeedReponse';
 import { AxiosResponse } from 'axios';
@@ -17,6 +17,7 @@ interface ChannelCustom{
 const Subscription: React.FC = () => {
   const [videos, setVideos] = useState<FeedReponse[]>([]);
   const [subscribedChannels, setSubscribedChannels] = useState<Channel[]>([]);
+  const navigation = useNavigation();
 
   useEffect(() => {
     async function loadVideosSubscriptions(){
@@ -53,7 +54,7 @@ const Subscription: React.FC = () => {
           )}
         />
         <NavigationContent>
-          <NavigationButton onPress={() => {console.log("asioeaosijeojase")}}>
+          <NavigationButton onPress={() => {navigation.navigate("Channel list", {subscribedChannels})}}>
             <NavigationText>ALL</NavigationText>
           </NavigationButton>
         </NavigationContent> 

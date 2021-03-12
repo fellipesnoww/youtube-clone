@@ -7,7 +7,6 @@ import logoHeader from '../../assets/yt_logo_dark.png';
 import avatar from '../../assets/avatar.png';
 
 const Header: React.FC = () => {
-  console.log(StatusBar.currentHeight);
   return (
     <Container>
         <Image source={logoHeader}/>
