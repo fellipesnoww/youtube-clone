@@ -6,7 +6,8 @@ interface Video {
     time: string;
 }
 
-interface Channel {
+export interface Channel {
+    id: number;
     name: string;
     avatar: string;
 }

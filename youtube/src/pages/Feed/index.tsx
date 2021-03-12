@@ -14,7 +14,6 @@ const Feed: React.FC = () => {
   useEffect(() => {
     async function loadVideosFeed(){
       const response = await api.get<AxiosResponse<FeedReponse[]>>('/feed');
-      console.log(response.data);
       setVideos(response.data);      
     }
 

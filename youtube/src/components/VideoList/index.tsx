@@ -4,25 +4,18 @@ import { View } from 'react-native';
 import Icon from 'react-native-vector-icons/Feather';
 import { List, VideoContent, AboutContent, DetailText, ContentText, AboutText, Thumbnail, AvatarImage, IconContent, DurationContent, TextDuration } from './styles';
 import { FeedReponse } from '../../types/FeedReponse';
-
+import stringChanger from '../../utils/stringChanger';
 interface CustomProps{
   data: Array<FeedReponse>
 }
 
 const VideoList: React.FC<CustomProps> = ({children, ...props}) => {
-  
-  function changeString(text: string): string {    
-    var strChange = text.substring(77);    
-    var newStr = text.replace(strChange, " ...");    
-    return newStr;
-  }
-
   return (
   <>
     <List
       data={props.data}
       showsVerticalScrollIndicator={false}
-      key={video => String(video.video.id)}
+      key={video => String(video?.video.id)}
       renderItem={({ item }) => (
         <VideoContent>          
           <Thumbnail source={{uri: item?.video.image_url}}/>        
@@ -33,7 +26,7 @@ const VideoList: React.FC<CustomProps> = ({children, ...props}) => {
                 {item?.video.name.length <= 77 ?
                   <DetailText>{item?.video.name}</DetailText>
                   :
-                  <DetailText>{changeString(item?.video.name)}</DetailText>
+                  <DetailText>{stringChanger(77, item?.video.name)}</DetailText>
                 }
                 <AboutText>{`${item?.video.channel.name} • ${item?.video.views} views • ${item?.video.date}`}</AboutText>
               </ContentText>
