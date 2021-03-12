@@ -217,24 +217,80 @@
     ],
     "subscription": [
         {
-            "id": 1,
             "channel":{
-                "avatar": "287321739",
+                "id": 1,
+                "avatar": "https://yt3.ggpht.com/ytc/AAUvwniSCbwb7fNmt-Olfwjv1yLViSFBOL2Lh71wAwDFhA=s900-c-k-c0x00ffffff-no-rj",
                 "name": "Inutilismo"
             }
         },
         {
-            "id": 2,
             "channel":{
-                "avatar": "287321739",
-                "name": "Maicon Kuster"
+                "id": 2,
+                "avatar": "https://yt3.ggpht.com/ytc/AAUvwngvQCeGwtWKoJrdCOQso5joUVVfnJKpa_3cGDwIuw=s88-c-k-c0x00ffffff-no-rj",
+                "name": "Maicon Küster"
             }
         },
         {
-            "id": 3,
             "channel":{
-                "avatar": "287321739",
+                "id": 3,
+                "avatar": "https://yt3.ggpht.com/ytc/AAUvwniZFvNe5OEM2bTjcGRdH8fOW06pr9HYSJCwDPK_BA=s88-c-k-c0x00ffffff-no-rj",
                 "name": "Rocketseat"
+            }
+        },
+        {
+            "channel":{
+                "id": 4,
+                "avatar": "https://yt3.ggpht.com/ytc/AAUvwniZFvNe5OEM2bTjcGRdH8fOW06pr9HYSJCwDPK_BA=s88-c-k-c0x00ffffff-no-rj",
+                "name": "Os Donos da Bola"
+            }
+        },
+        {
+            "channel":{
+                "id": 5,
+                "avatar": "https://yt3.ggpht.com/ytc/AAUvwnjmOwHGXldA8NPXJ4vIFtA4334qT5fspJMPoM4p=s88-c-k-c0x00ffffff-no-rj",
+                "name": "Filipe Deschamps"
+            }
+        },
+        {
+            "channel":{
+                "id": 6,
+                "avatar": "https://yt3.ggpht.com/ytc/AAUvwnh3qcXoKDGfaEE_tqvBu-VCHcUg0lEPXjBNFT4rgA=s88-c-k-c0x00ffffff-no-rj",
+                "name": "Flow Podcast"
+            }
+        },
+        {
+            "channel":{
+                "id": 7,
+                "avatar": "https://yt3.ggpht.com/ytc/AAUvwnhCyhRpGYPgAW70Jz6lWQX4HtXJoBLcW3BZJYkZ-w=s88-c-k-c0x00ffffff-no-rj",
+                "name": "Canal Nostalgia"
+            }
+        },
+        {
+            "channel":{
+                "id": 8,
+                "avatar": "https://yt3.ggpht.com/ytc/AAUvwniTqB4nhiTAz1KLK6YwlZ89ABZ0PlkDapZXjy5z3w=s48-c-k-c0x00ffffff-no-rj",
+                "name": "Games Edu"
+            }
+        },
+        {
+            "channel":{
+                "id": 9,
+                "avatar": "https://yt3.ggpht.com/ytc/AAUvwnhzZtj7y-a9wZj4_s_qe2AtEz_Qa-FpMNHo8LJxBw=s88-c-k-c0x00ffffff-no-rj",
+                "name": "Ciencia Todo Dia"
+            }
+        },
+        {
+            "channel":{
+                "id": 10,
+                "avatar": "https://yt3.ggpht.com/ytc/AAUvwnjUpz_asD7mPQoWSnYHjHjb_KQyWJAQri5Jlc05=s48-c-k-c0x00ffffff-no-rj",
+                "name": "Zangado"
+            }
+        },
+        {
+            "channel":{
+                "id": 11,
+                "avatar": "https://yt3.ggpht.com/ytc/AAUvwng9ypnvF0nzmaEiUt1qNCpyZGivgv9TSLooLt-7-Q=s88-c-k-c0x00ffffff-no-rj",
+                "name": "Funky Black Cat"
             }
         }
     ]
