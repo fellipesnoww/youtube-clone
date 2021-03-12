@@ -12,8 +12,9 @@ export const Container = styled.View`
     flex-direction: row;
     width: 100%;
     height: 60px;
-    margin-top: 33px;
-    border: 1px solid #FFF3;
+    margin-top: 33px;    
+    border-bottom-width: 1px;
+    border-bottom-color: #FFF3;
     align-items: center;
     justify-content: space-between;
 `;

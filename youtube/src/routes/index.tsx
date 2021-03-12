@@ -8,8 +8,6 @@ import Explore from '../pages/Explore';
 import Subscription from '../pages/Subscription';
 import Library from '../pages/Library';
 
-import {IconTab} from './styles';
-
 const Tab = createMaterialBottomTabNavigator();
 
 const Routes: React.FC = () => {
@@ -17,8 +15,10 @@ const Routes: React.FC = () => {
         <NavigationContainer>
             <Tab.Navigator
             barStyle={{
-                backgroundColor: '#312E38'
-              }}
+                backgroundColor: '#312E38',
+                borderTopWidth: 1,
+                borderTopColor: '#FFF3'
+              }}           
             >
             <Tab.Screen name="Feed" options={{
                 tabBarIcon: ({ color, focused }) => (
