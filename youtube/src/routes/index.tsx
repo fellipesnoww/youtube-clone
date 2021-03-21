@@ -10,7 +10,8 @@ import Explore from '../pages/Explore';
 import Subscription from '../pages/Subscription';
 import Library from '../pages/Library';
 import SubscriptionsList from '../pages/SubscriptionsList';
-
+import VideosTag from '../pages/VideosTag';
+import VideosTagHeader from '../pages/VideosTagHeader';
 
 const Tab = createMaterialBottomTabNavigator();
 const Stack = createStackNavigator();
@@ -30,6 +31,31 @@ function SubscriptionStack(){
                 headerStyle: { backgroundColor: '#312E38',  }                
                 }} 
             name="Channel list" component={SubscriptionsList} />
+        </Stack.Navigator>
+    )
+}
+
+function ExploreStack(){
+    return (
+        <Stack.Navigator>
+            <Stack.Screen 
+            options={{
+                headerShown: false,
+                cardStyle: { backgroundColor: '#312E38' },
+            }} 
+            name="Explore" component={Explore} />
+            <Stack.Screen 
+            options={{
+                headerShown: false,
+                headerStyle: { backgroundColor: '#312E38',  }                
+                }} 
+            name="Videos tag" component={VideosTag} />
+            <Stack.Screen 
+            options={{
+                headerShown: false,
+                headerStyle: { backgroundColor: '#312E38',  }                
+                }} 
+            name="Videos tag header" component={VideosTagHeader} />
         </Stack.Navigator>
     )
 }
@@ -56,7 +82,7 @@ const Routes: React.FC = () => {
                     <Icon name="explore" solid={focused} size={25} color={color} />
                 ),
               }}
-            component={Explore} />
+            component={ExploreStack} />
             <Tab.Screen name="Subscription"
             options={{
                 tabBarIcon: ({ color, focused }) => (

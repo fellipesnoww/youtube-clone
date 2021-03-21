@@ -4,16 +4,17 @@ import styled from 'styled-components/native';
 import {FeedReponse} from '../../types/FeedReponse'
 
 interface CustomProps{
-  width: string; 
-  marginLeft: string;
+  width?: string; 
+  marginLeft?: string;
+  usePadding?: boolean;
 }
 
-export const List = styled(
+export const List = styled<CustomProps>(
     FlatList as new () => FlatList<FeedReponse>,
   ).attrs({
     numColumns: 1,
   })`       
-  padding: 0 10px;
+  ${props => props.usePadding ? "padding: 0 10px" : ""};
   `;
 
   export const VideoContent = styled.View`
@@ -22,7 +23,7 @@ export const List = styled(
   background-color: #312E38;   
   elevation: 1;
   margin-bottom: 12px;
-  margin-top: 5px;
+  margin-top: 5px;  
 `;
 
 export const AboutContent = styled.View`
@@ -32,6 +33,13 @@ export const AboutContent = styled.View`
   flex-direction: row; 
   align-items: center; 
   justify-content: space-between;     
+`;
+
+export const VideoDescription = styled.View`
+  margin-top: 5px;
+  flex-direction: row;
+  width: 90%; 
+  margin-left: 10px;
 `;
 
 export const ContentText = styled.View`

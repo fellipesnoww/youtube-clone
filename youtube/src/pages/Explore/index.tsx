@@ -6,10 +6,15 @@ import api from '../../services/api';
 import { FeedReponse } from '../../types/FeedReponse';
 import { AxiosResponse } from 'axios';
 import VideoList from '../../components/VideoList';
-import { Content, TagContent, TagsRigth, TagsLeft, Tag, Title, VideosContent, TitleHeader } from './styles';
+import {useNavigation} from '@react-navigation/native';
+import { Content, TagContent, TagsRigth, TagsLeft, Tag, Title, VideosContent, TitleHeader, NavigationButton } from './styles';
+import { LogBox } from 'react-native';
 
 const Explore: React.FC = () => {
+  LogBox.ignoreLogs(['Warning: ...'])
+  
   const [videos, setVideos] = useState<FeedReponse[]>([]);
+  const navigation = useNavigation();
 
   useEffect(() => {
     async function loadVideosFeed(){
@@ -26,38 +31,54 @@ const Explore: React.FC = () => {
       <TagContent>
         <TagsRigth>
           <Tag color="#CF5151">
-            <Icon name="local-fire-department" size={30} color="#FFF"/>
-            <Title>Trending</Title>
+            <NavigationButton onPress={() => {navigation.navigate("Videos tag", {title: "Trending", tagId: 1})}}> 
+              <Icon name="local-fire-department" size={30} color="#FFF"/>
+              <Title>Trending</Title>
+            </NavigationButton>
           </Tag>
           <Tag color="#E68383">
-            <Icon name="sports-esports" size={30} color="#FFF"/>
-            <Title>Gaming</Title>
+            <NavigationButton onPress={() => {navigation.navigate("Videos tag header", {title: "Gaming", tagId: 3})}}> 
+              <Icon name="sports-esports" size={30} color="#FFF"/>
+              <Title>Gaming</Title>
+            </NavigationButton>
           </Tag>
           <Tag color="#CFAC13">
-            <Icon name="local-movies" size={30} color="#FFF"/>
-            <Title>Movies</Title>
+            <NavigationButton onPress={() => {navigation.navigate("Videos tag", {title: "Movies", tagId: 5})}}> 
+              <Icon name="local-movies" size={30} color="#FFF"/>
+              <Title>Movies</Title>
+            </NavigationButton>
           </Tag>
           <Tag color="#FA7E11">
-            <Icon name="live-tv" size={30} color="#FFF"/>
-            <Title>Live</Title>
+            <NavigationButton onPress={() => {navigation.navigate("Videos tag header", {title: "Live", tagId: 7})}}> 
+              <Icon name="live-tv" size={30} color="#FFF"/>
+              <Title>Live</Title>
+            </NavigationButton>
           </Tag>
         </TagsRigth>
         <TagsLeft>   
           <Tag color="#28A17A">
-            <Icon name="music-note" size={30} color="#FFF"/>
-            <Title>Music</Title>
+            <NavigationButton onPress={() => {navigation.navigate("Videos tag header", {title: "Music", tagId: 2})}}> 
+              <Icon name="music-note" size={30} color="#FFF"/>
+              <Title>Music</Title>
+            </NavigationButton>
           </Tag>
           <Tag color="#0041BA">
-            <Icon name="article" size={30} color="#FFF"/>
-            <Title>News</Title>
+            <NavigationButton onPress={() => {navigation.navigate("Videos tag header", {title: "News", tagId: 4})}}> 
+              <Icon name="article" size={30} color="#FFF"/>
+              <Title>News</Title>
+            </NavigationButton>
           </Tag>
           <Tag color="#067333">
-            <Icon name="emoji-objects" size={30} color="#FFF"/>
-            <Title>Learning</Title>
+            <NavigationButton onPress={() => {navigation.navigate("Videos tag header", {title: "Learning", tagId: 6})}}> 
+              <Icon name="emoji-objects" size={30} color="#FFF"/>
+              <Title>Learning</Title>
+            </NavigationButton>
           </Tag>
           <Tag color="#187AF2">
-            <Icon name="emoji-events" size={30} color="#FFF"/>
-            <Title>Sports</Title>
+            <NavigationButton onPress={() => {navigation.navigate("Videos tag header", {title: "Sports", tagId: 8})}}> 
+              <Icon name="emoji-events" size={30} color="#FFF"/>
+              <Title>Sports</Title>
+            </NavigationButton>
           </Tag>       
         </TagsLeft>
       </TagContent>

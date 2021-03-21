@@ -1,4 +1,4 @@
-import {ScrollView} from 'react-native';
+import {ScrollView, TouchableOpacity} from 'react-native';
 import styled from 'styled-components/native';
 
 interface CustomProps {
@@ -48,6 +48,14 @@ export const Tag = styled.View<CustomProps>`
     align-items: center;
     justify-content: flex-start;
     padding: 0 10px;
+`;
+
+export const NavigationButton = styled.TouchableOpacity`
+    width: 190px;
+    height: 45px;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
 `;
 
 export const Title = styled.Text`

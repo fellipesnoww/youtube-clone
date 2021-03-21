@@ -2,11 +2,12 @@ import React from 'react';
 import { View } from 'react-native';
 // import Icon from 'react-native-vector-icons/MaterialIcons';
 import Icon from 'react-native-vector-icons/Feather';
-import { List, VideoContent, AboutContent, DetailText, ContentText, AboutText, Thumbnail, AvatarImage, IconContent, DurationContent, TextDuration } from './styles';
+import { List, VideoContent, AboutContent, DetailText, ContentText, AboutText, Thumbnail, AvatarImage, IconContent, DurationContent, TextDuration, VideoDescription } from './styles';
 import { FeedReponse } from '../../types/FeedReponse';
 import stringChanger from '../../utils/stringChanger';
 interface CustomProps{
-  data: Array<FeedReponse>
+  data: Array<FeedReponse>;
+  usePadding?: boolean;
 }
 
 const VideoList: React.FC<CustomProps> = ({children, ...props}) => {
@@ -14,13 +15,14 @@ const VideoList: React.FC<CustomProps> = ({children, ...props}) => {
   <>
     <List
       data={props.data}
+      usePadding={props.usePadding}
       showsVerticalScrollIndicator={false}
       key={video => String(video?.video.id)}
       renderItem={({ item }) => (
         <VideoContent>          
           <Thumbnail source={{uri: item?.video.image_url}}/>        
           <AboutContent>
-            <View style={{marginTop: 5, flexDirection: "row", width: "90%"}}>
+            <VideoDescription>
               <AvatarImage source={{uri: item?.video.channel.avatar}}/>
               <ContentText>
                 {item?.video.name.length <= 77 ?
@@ -30,7 +32,7 @@ const VideoList: React.FC<CustomProps> = ({children, ...props}) => {
                 }
                 <AboutText>{`${item?.video.channel.name} • ${item?.video.views} views • ${item?.video.date}`}</AboutText>
               </ContentText>
-            </View>
+            </VideoDescription>
             <IconContent>
               <Icon name="more-vertical" size={20} color="#FFFF"/>
             </IconContent>            
