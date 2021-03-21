@@ -293,5 +293,49 @@
                 "name": "Funky Black Cat"
             }
         }
+    ],
+    "playlists": [
+        {
+            "id": 1,
+            "name": "Liked Videos",
+            "quantity": "409 videos",
+            "image_url": "thumb-up-off"
+        },
+        {
+            "id": 2,
+            "name": "Games",
+            "quantity": "12 videos",
+            "image_url": "https://i.pinimg.com/originals/9a/4c/d3/9a4cd3df2032a468c2e22e71f33b03d4.jpg"
+        },
+        {
+            "id": 3,
+            "name": "Humor",
+            "quantity": "10 videos",
+            "image_url": "https://yt3.ggpht.com/ytc/AAUvwniSCbwb7fNmt-Olfwjv1yLViSFBOL2Lh71wAwDFhA=s900-c-k-c0x00ffffff-no-rj"
+        },
+        {
+            "id": 4,
+            "name": "Panic! At the Disco",
+            "quantity": "30 videos",
+            "image_url": "https://i.ytimg.com/vi/7qFF2v8VsaA/maxresdefault.jpg"
+        },
+        {
+            "id": 5,
+            "name": "Rocketseat Aulas",
+            "quantity": "10 videos",
+            "image_url": "https://yt3.ggpht.com/ytc/AAUvwniZFvNe5OEM2bTjcGRdH8fOW06pr9HYSJCwDPK_BA=s900-c-k-c0x00ffffff-no-rj"
+        },
+        {
+            "id": 6,
+            "name": "Twenty one Pilots",
+            "quantity": "21 videos",
+            "image_url": "https://studiosol-a.akamaihd.net/uploadfile/letras/fotos/5/d/2/c/5d2c5e38f33c2727797b2ee7911668b3.jpg"
+        },
+        {
+            "id": 7,
+            "name": "React Native",
+            "quantity": "10 videos",
+            "image_url": "https://miro.medium.com/max/1024/1*xDi2csEAWxu95IEkaNdFUQ.png"
+        }
     ]
 }
